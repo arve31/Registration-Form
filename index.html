@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <form id="regForm" action="">
+
+        <h1>Register:</h1>
+        
+        <div class="tab">Name:
+          <p><input placeholder="First name..." oninput="this.className = ''" onkeydown="return /[a-zA-Z]/i.test(event.key)"></p>
+          <p><input placeholder="Last name..." oninput="this.className = ''" onkeydown="return /[a-zA-Z]/i.test(event.key)"></p>
+        </div>
+        
+        <div class="tab">Contact Info:
+          <p><input type="email" placeholder="E-mail..." oninput="this.className = ''"></p>
+          <p><input type="number" placeholder="Phone..." oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">Birthday:
+          <p><input type="number" placeholder="dd" oninput="this.className = ''"></p>
+          <p><input type="number" placeholder="mm" oninput="this.className = ''"></p>
+          <p><input type="number" placeholder="yyyy" oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="tab">Login Info:
+          <p><input placeholder="Username..." oninput="this.className = ''"></p>
+          <p><input type="password" placeholder="Password..." oninput="this.className = ''"></p>
+        </div>
+        
+        <div class="buttons-box">
+          <div class="buttons">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        
+        <div class="pages">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+        
+        </form> 
+
+    <script src="./main.js"></script>
+</body>
+</html>
